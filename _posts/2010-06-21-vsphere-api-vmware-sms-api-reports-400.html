@@ -1,0 +1,12 @@
+---
+layout: post
+title: VSphere API (VMware SMS API) reports 400 Bad Request – problem solving
+date: '2010-06-21T11:03:00.001+08:00'
+author: Stanley Shi
+tags: 
+modified_time: '2010-06-21T11:03:17.175+08:00'
+blogger_id: tag:blogger.com,1999:blog-4195205503550406237.post-6911337474520793060
+blogger_orig_url: http://eng-architect.blogspot.com/2010/06/vsphere-api-vmware-sms-api-reports-400.html
+---
+
+<p>The original source: <a title="http://communities.vmware.com/message/1494562" href="http://communities.vmware.com/message/1494562">http://communities.vmware.com/message/1494562</a></p>  <p>Our problem: we are using VMware VSphere API and SMS API for getting the Objects from the VCenter’s catalog. It worked fine on one VMware environment, but when we deployed it to another environment, the API report “HTTP 400, Bad Request”.</p>  <p>The solution: checking the VCenter Server host, make sure all the windows services related to VMware are running. In our scenario, we found some service is not running. </p>  <p>Make sure the service “VMware VirtualCenter Management Webservices” is running, and also other services are also running.</p>  

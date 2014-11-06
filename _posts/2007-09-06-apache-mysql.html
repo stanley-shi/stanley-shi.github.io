@@ -1,0 +1,12 @@
+---
+layout: post
+title: Apache & MySQL
+date: '2007-09-05T22:14:00.001-07:00'
+author: Stanley Shi
+tags: 
+modified_time: '2007-09-05T22:14:26.325-07:00'
+blogger_id: tag:blogger.com,1999:blog-9061829565455522120.post-607249343795228327
+blogger_orig_url: http://dmshi.blogspot.com/2007/09/apache-mysql.html
+---
+
+<p>昨天想起要把直接copy的apache和mysql安装成系统服务，网上找了找资料，总算搞定了，这里稍微记一下，方便以后查询：</p> <p>1. Apache</p> <p>这里用的是apache2。系统本身的apache是免安装版本，所以没有注册apache系统服务，需要手动注册，命令行很简单，跑到apache安装目录下的bin目录下，打开cmd窗口，输入：</p> <p>httpd -k {install | config | remove}</p> <p>三个命令对应三个不同的作用，如果想设置成个性化的apache服务名称，可以添加下面的命令：</p> <p>httpd -k install -n myapache</p> <p>后面的myapache是自己定义的名字。</p> <p>apache的具体配置就懒得说了，太长了，主要是在里面的httpd.conf文件中配置，详细可以参阅apache的网站。</p> <p>2. MySQL</p> <p>mysql的配置也是类似，在其根目录下的bin目录中执行：</p> <p>mysqld-nt.exe --install</p> <p>中间也可以输入基本的配置文件信息（但是我昨天在4.1的mysql上面配置失败，只能用默认配置，mysql默认的配置文件在c:\winnt文件夹下的my.ini，而不是mysql安装文件夹中的文件。</p> <p>另外就是error: 1607好像就是因为配置文件的错误导致，一般需要检查配置文件是否正确。</p>

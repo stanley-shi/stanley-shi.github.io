@@ -1,0 +1,12 @@
+---
+layout: post
+title: _JAVA_OPTIONS – For my info
+date: '2010-01-07T22:17:00.001+08:00'
+author: Stanley Shi
+tags: 
+modified_time: '2010-01-07T22:17:53.479+08:00'
+blogger_id: tag:blogger.com,1999:blog-4195205503550406237.post-1416155655256879268
+blogger_orig_url: http://eng-architect.blogspot.com/2010/01/javaoptions-for-my-info.html
+---
+
+<p>Today I found some interesting environment variable: _JAVA_OPTIONS.</p>  <p>The behavior is like this, here I will show some example.</p>  <p>$export _JAVA_OPTIONS=”-Djava.test=123456”</p>  <p>guess what will be happening?</p>  <p>Yes, you are right. If you call java ** later, it will automatically use the parameters in the double quotes. Hence in this example, it will set the System property “java.test” as the value “123456”.</p>  <p>there’s only one issue: if you set this variable, every time you run java **, the command line will show “Pick up _JAVA_0PTIONS: *****”</p>  <p></p>  <p></p>  <p></p>  <p></p>  <div align="left">   <p></p> </div>  

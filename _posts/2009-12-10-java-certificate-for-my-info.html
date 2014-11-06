@@ -1,0 +1,12 @@
+---
+layout: post
+title: Java Certificate –For My Info
+date: '2009-12-10T17:22:00.001+08:00'
+author: Stanley Shi
+tags: 
+modified_time: '2009-12-10T17:22:44.399+08:00'
+blogger_id: tag:blogger.com,1999:blog-4195205503550406237.post-543995379084662753
+blogger_orig_url: http://eng-architect.blogspot.com/2009/12/java-certificate-for-my-info.html
+---
+
+<p>Java uses its <em>keytool</em> to manage the certificates.</p>  <p></p>  <p>The mostly used command is like this:&#160; </p>  <p><em>keytool –import –file {yourserver.pem} –keystore {youkeystorefile} </em></p>  <p></p>  <p>where {youserver.pem} is the certification file from your server, and {yourkeystorefile} is the file you used to save the keystores.</p>  <p>Note: the default password for the jdk default keystore file (normal this file located as “$JRE_HOME/lib/security/cacerts”) is “changeit”.</p>  <p>For more information about the <em>keytool</em> command, you can refer to <a href="http://java.sun.com/javase/6/docs/technotes/tools/solaris/keytool.html">this page</a>.</p>  

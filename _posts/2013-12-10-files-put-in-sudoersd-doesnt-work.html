@@ -1,0 +1,12 @@
+---
+layout: post
+title: files put in sudoers.d doesn't work?!
+date: '2013-12-10T16:11:00.002+08:00'
+author: Stanley Shi
+tags: 
+modified_time: '2013-12-10T16:11:51.042+08:00'
+blogger_id: tag:blogger.com,1999:blog-4195205503550406237.post-522707265559013897
+blogger_orig_url: http://eng-architect.blogspot.com/2013/12/files-put-in-sudoersd-doesnt-work.html
+---
+
+Added one file under /etc/sudoers.d named "pivtl.conf", the content is:<br />%pivtlusr &nbsp; &nbsp; &nbsp; ALL=(ALL) &nbsp; &nbsp; &nbsp; NOPASSWD: ALL<br /><br />It should give user in pivtlusr group sudo permission to all command without the need of password.<br />But it DOES NOT work!? Why?!!!!!<br /><br />Then I found this link:&nbsp;https://bbs.archlinux.org/viewtopic.php?id=141539<br />A member "fwolf" helped with the following content:<br /><br />&nbsp;"<span style="background-color: #fcfdfe; color: #333333; font-family: sans-serif; font-size: 13px; line-height: 19px;">Just a note:</span><span style="background-color: #fcfdfe; color: #333333; font-family: sans-serif; font-size: 13px; line-height: 19px;">&nbsp;</span><br /><div style="background-color: #fcfdfe; border: 0px; font-family: sans-serif; font-size: 13px; line-height: 19px; padding: 7px 0px;"><span style="color: red;">sudo will read each file in /etc/sudoers.d, skipping file names that<br />end in ~ or contain a . character ...</span></div><div style="background-color: #fcfdfe; border: 0px; color: #333333; font-family: sans-serif; font-size: 13px; line-height: 19px; padding: 7px 0px;">This solve my sudoers.d/ file not working problem, found here:<br /><a href="http://bugs.centos.org/view.php?id=5017" rel="nofollow" style="color: #666666; font-weight: bold; outline: none; text-decoration: none;">http://bugs.centos.org/view.php?id=5017</a></div><div style="background-color: #fcfdfe; border: 0px; color: #333333; font-family: sans-serif; font-size: 13px; line-height: 19px; padding: 7px 0px;">Hope this helpful.</div><div style="background-color: #fcfdfe; border: 0px; color: #333333; font-family: sans-serif; font-size: 13px; line-height: 19px; padding: 7px 0px;">Then I changed the name "pivtl.conf" to be "pivtl", everything works like a charm!</div><div style="background-color: #fcfdfe; border: 0px; color: #333333; font-family: sans-serif; font-size: 13px; line-height: 19px; padding: 7px 0px;">Anyway, good to know this!</div>

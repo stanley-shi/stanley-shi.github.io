@@ -1,0 +1,12 @@
+---
+layout: post
+title: First tech tips-- Java debug info
+date: '2008-05-30T02:40:00.001-07:00'
+author: Stanley Shi
+tags: 
+modified_time: '2008-05-30T02:40:17.493-07:00'
+blogger_id: tag:blogger.com,1999:blog-9061829565455522120.post-1934341319868826044
+blogger_orig_url: http://dmshi.blogspot.com/2008/05/first-tech-tips-java-debug-info.html
+---
+
+<p>Java Debug optimization: </p>  <p>Sometimes you will face the problem that you need to debug the java application, so you put a lot of debug codes in you code, for example you may use the log4j or something else to print out the debug information. </p>  <p>But one thing you must remember, even if you use the log4j to log your debug information, during the runtime of your code, it still cost some time to run over the debug codes, even if you use log.debug(..) and you set the log level to some higher level like &quot;warn&quot; or something else. For some performance critical application, this maybe a little issue, you have to remove all the debug lines of code, this is definitely the problem. </p>  <p>Today when I ask Jake about this, he told me something: </p>  <p>First you can define a constant such as : <em>public static final boolean debug=true;</em> </p>  <p>then in your code, for the places you want to print the debug information, you can use: </p>  <p>&#160;&#160;&#160; if(debug){ printdebuginfo(); } </p>  <p>and when deploying the application, just change the definition of the <em>debug </em>to <em>false</em>, then the java compiler will automaticallly remove the <em>printdebuginfo()</em> line of code, and also the <em>if</em> statement will not appear in the binary code. This will definitely save your time and also maintain the performance of your code. </p>  <p>And DO REMEMBER, the constant should be declared as <em>static &amp; final</em>, or this will not work as you expected. </p>  <p>Here is a simple example: </p>  <p>//file name: GC.java </p>  <p>public class GC{ </p>  <p>&#160;&#160; public static final boolean DEBUG=true; </p>  <p>} </p>  <p>//file name: App.java </p>  <p>public class App{ </p>  <p>&#160;&#160; public static void main(String[] args){ </p>  <p>&#160;&#160;&#160;&#160;&#160; if(GC.DEBUG) System.out.println(&quot;this is a debug info&quot;); </p>  <p>//&#160;&#160;&#160;&#160;&#160; doSomething(); </p>  <p>&#160;&#160; } </p>  <p>}</p>  

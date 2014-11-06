@@ -1,0 +1,12 @@
+---
+layout: post
+title: Telnet configure – For My Info
+date: '2010-01-14T10:36:00.001+08:00'
+author: Stanley Shi
+tags: 
+modified_time: '2010-01-14T10:36:48.193+08:00'
+blogger_id: tag:blogger.com,1999:blog-4195205503550406237.post-538891148744859519
+blogger_orig_url: http://eng-architect.blogspot.com/2010/01/telnet-configure-for-my-info.html
+---
+
+<p>Today I encountered an error, when I tried to telnet to some windows machine, I got this error “Failure in initializing the telnet session. Shell process may not have been launched.”</p>  <p>I checked the configure of&#160; the remote host and see that the telnet service has been started, so why failure?</p>  <p>I tried Google and found this solution: because if you telnet to this session, you are trying to make another logon, so you have to enable the “secondary logon” service.</p>  <p>I did that, and wow~, success !</p>  

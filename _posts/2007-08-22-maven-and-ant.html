@@ -1,0 +1,13 @@
+---
+layout: post
+title: maven and ant
+date: '2007-08-21T20:19:00.001-07:00'
+author: Stanley Shi
+tags:
+- tech tips
+modified_time: '2007-08-22T18:14:12.441-07:00'
+blogger_id: tag:blogger.com,1999:blog-9061829565455522120.post-5097611141085528308
+blogger_orig_url: http://dmshi.blogspot.com/2007/08/maven-and-ant.html
+---
+
+<p>"Apache Maven一个潜在的基于java的apache ant的构建工具的替代者。两者之间的比较： <br>第一：ant脚本是可以直接运行在maven中的。maven和ant最大的差别就是在于maven的编译以及所有的脚本都有一个基础，就是POM （project object model）。这个模型定义了项目的方方面面，然后各式各样的脚本在这个模型上工作，而ant完全是自己定义，显然maven更胜一筹。 <br>第二：Maven对所依赖的包有明确的定义，如使用那个包，版本是多少，一目了然。而ant则通常是简单的inclde 所有的jar。导致的最终结果就是，你根本无法确定JBoss中的lib下的common－logging 是哪个版本的，唯一的方法就是打开 META－INF 目录下MANIFEST.MF。估计JBoss迟早会转向Maven的。 <br>第三：Maven是基于中央仓库的编译，即把编译所需要的资源放在一个中央仓库里，如jar，tld，pom，等。当编译的时候，maven会自动在仓库中找到相应的包，如果本地仓库没有，则从设定好的远程仓库中下载到本地。这一切都是自动的，而ant需要自己定义了。这个好处导致的结果就是，用maven编译的项目在发布的时候只需要发布源码，小得很，而反之，ant的发布则要把所有的包一起发布，显然maven又胜了一筹。 <br>第四：maven有大量的重用脚本可以利用，如生成网站，生成javadoc，sourcecode reference，等。而ant都需要自己去写。试试 maven site 的效果。 <br>第五：maven目前不足的地方就是没有象ant那样成熟的GUI界面，不过mavengui正在努力中。目前使用maven最好的方法还是命令行，又快又方便。 "--from <a href="http://www.open-open.com/open31844.htm">http://www.open-open.com/open31844.htm</a></p> <p>整体上来说呢，这篇文章就说了maven如何如何的好，ant如何如何的不好，不过还是了解东西的好处了，可惜还是不会用，个人觉得其实ant很不错啦，能够满足我的需求了，虽然对ant还不是很熟，将就用用还是可以的了！</p>
