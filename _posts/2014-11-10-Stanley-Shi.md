@@ -1,5 +1,7 @@
 ---
-published: false
+layout: post
+published: true
+
 ---
 
 ## Stanley is about to leave Pivotal soon
