@@ -13,3 +13,9 @@ markdown: kramdown
 
 highlighter: pygments
 github:
+
+paginate: 15
+
+collections:
+  life:
+    output: true
