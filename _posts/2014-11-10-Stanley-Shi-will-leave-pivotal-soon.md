@@ -1,6 +1,7 @@
 ---
 layout: post
 published: true
+comments: True
 
 ---
 
