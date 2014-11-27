@@ -1,11 +1,14 @@
 ---
 layout: post
-title: Tech Notes
+title: Tech Notes Continuously updated
 author: Stanley Shi
 Comments: True
 tags: 
 
 ---
+[Maven ssl error](#how-to-allow-maven-to-ignore-all-ssl-error)
+
+
 How to allow maven to ignore all ssl error
 ==========================================
 
