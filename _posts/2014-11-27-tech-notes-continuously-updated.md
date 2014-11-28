@@ -4,12 +4,12 @@ title: Tech Notes Continuously updated
 author: Stanley Shi
 Comments: True
 tags: 
-
 ---
 
-##### [SSH default settings](#how-to-setup-ssh-default-settings)
-##### [Git alias](#how-to-enable-git-alias)
-##### [Maven ssl error](#how-to-allow-maven-to-ignore-all-ssl-error)
+1. [SSH default settings](#how-to-setup-ssh-default-settings)
+2. [Git alias](#how-to-enable-git-alias)
+3. [Maven ssl error](#how-to-allow-maven-to-ignore-all-ssl-error)
+
 -----
 How to setup ssh default settings
 =================================
@@ -26,6 +26,7 @@ The above setting will set the default user name to all hosts as "stanley"; and 
 This alias is different from the /etc/hosts file that this alias will only affect the ssh command; if you ping "mymac", it will still warn you that this host is not known;
 
 You can also set other setting here in the same file, please refer to [ssh config](http://linux.die.net/man/5/ssh_config) for more information;
+
 -----
 How to enable git alias
 =======================
