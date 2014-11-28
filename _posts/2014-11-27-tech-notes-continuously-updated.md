@@ -10,7 +10,7 @@ tags:
 2. [Git alias](#how-to-enable-git-alias)
 3. [Maven ssl error](#how-to-allow-maven-to-ignore-all-ssl-error)
 
------
+
 How to setup ssh default settings
 =================================
 
@@ -27,7 +27,6 @@ This alias is different from the /etc/hosts file that this alias will only affec
 
 You can also set other setting here in the same file, please refer to [ssh config](http://linux.die.net/man/5/ssh_config) for more information;
 
------
 How to enable git alias
 =======================
 
@@ -40,7 +39,7 @@ Create a file at ~/.gitconfig with the following content:
         pl = pull
         st = status
 
------
+
 How to allow maven to ignore all ssl error
 ==========================================
 
