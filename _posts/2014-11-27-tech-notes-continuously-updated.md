@@ -16,25 +16,31 @@ Hadoop job submission notes
 
 The original post is here: http://grepalex.com/2013/02/25/hadoop-libjars/
 Main point:
+
 1. add libjars to the options:
 
-        $ export LIBJARS=/path/jar1,/path/jar2
-        $ hadoop jar my-example.jar com.example.MyTool -libjars ${LIBJARS} -mytoolopt value
+            $ export LIBJARS=/path/jar1,/path/jar2
+            $ hadoop jar my-example.jar com.example.MyTool -libjars ${LIBJARS} -mytoolopt value
+
 2. Make sure your code is using GenericOptionsParser
-        public static void main(final String[] args) throws Exception {
+
+           public static void main(final String[] args) throws Exception {
             Configuration conf = new Configuration();
             int res = ToolRunner.run(conf, new com.example.MyTool(), args);
             System.exit(res);
-        }
-        public class SmallFilesMapReduce extends Configured implements Tool {
+            }
+            public class SmallFilesMapReduce extends Configured implements Tool {
      
             public final int run(final String[] args) throws Exception {
             Job job = new Job(super.getConf());
             ...
             job.waitForCompletion(true);
             return ...;
-        }
+            }
+          
+
 3. Use HADOOP_CLASSPATH to make your third-party JAR’s available on the client-side
+
         $ export LIBJARS=/path/jar1,/path/jar2
         $ export HADOOP_CLASSPATH=/path/jar1:/path/jar2
         $ hadoop jar my-example.jar com.example.MyTool -libjars ${LIBJARS} -mytoolopt value
