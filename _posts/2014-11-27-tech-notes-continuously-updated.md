@@ -6,10 +6,18 @@ Comments: True
 tags: 
 ---
 
-1. [Hadoop job submission](#hadoop-job-submission-notes)
-2. [SSH default settings](#how-to-setup-ssh-default-settings)
-2. [Git alias](#how-to-enable-git-alias)
-3. [Maven ssl error](#how-to-allow-maven-to-ignore-all-ssl-error)
+1. [Minux("-") in path](#minus-sign-in-path)
+2. [Hadoop job submission](#hadoop-job-submission-notes)
+3. [SSH default settings](#how-to-setup-ssh-default-settings)
+4. [Git alias](#how-to-enable-git-alias)
+5. [Maven ssl error](#how-to-allow-maven-to-ignore-all-ssl-error)
+
+Minus sign in path
+==================
+
+If a linux folder has minus ("-") sign as the first character, here's how to delete it:
+    $ rm -- -2345
+
 
 Hadoop job submission notes
 ===========================
@@ -24,19 +32,19 @@ Main point:
 
 2. Make sure your code is using GenericOptionsParser
 
-           public static void main(final String[] args) throws Exception {
-            Configuration conf = new Configuration();
-            int res = ToolRunner.run(conf, new com.example.MyTool(), args);
-            System.exit(res);
-            }
-            public class SmallFilesMapReduce extends Configured implements Tool {
-     
-            public final int run(final String[] args) throws Exception {
+    public static void main(final String[] args) throws Exception {
+        Configuration conf = new Configuration();
+        int res = ToolRunner.run(conf, new com.example.MyTool(), args);
+        System.exit(res);
+     }
+     public class SmallFilesMapReduce extends Configured implements Tool {
+        public final int run(final String[] args) throws Exception {
             Job job = new Job(super.getConf());
             ...
             job.waitForCompletion(true);
             return ...;
-            }
+        }
+    }
           
 
 3. Use HADOOP_CLASSPATH to make your third-party JAR’s available on the client-side
