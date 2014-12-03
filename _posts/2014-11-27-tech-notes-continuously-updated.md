@@ -2,7 +2,7 @@
 layout: post
 title: Tech Notes Continuously updated
 author: Stanley Shi
-Comments: True
+comments: True
 tags: 
 ---
 
