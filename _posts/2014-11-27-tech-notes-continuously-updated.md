@@ -6,11 +6,26 @@ comments: True
 tags: 
 ---
 
-1. [Minux("-") in path](#minus-sign-in-path)
-2. [Hadoop job submission](#hadoop-job-submission-notes)
-3. [SSH default settings](#how-to-setup-ssh-default-settings)
-4. [Git alias](#how-to-enable-git-alias)
-5. [Maven ssl error](#how-to-allow-maven-to-ignore-all-ssl-error)
++ [Remove windows newline in vim](#remove-windows-newline-in-vim)
++ [Minux("-") in path](#minus-sign-in-path)
++ [Hadoop job submission](#hadoop-job-submission-notes)
++ [SSH default settings](#how-to-setup-ssh-default-settings)
++ [Git alias](#how-to-enable-git-alias)
++ [Maven ssl error](#how-to-allow-maven-to-ignore-all-ssl-error)
+
+Remove windows newline in vim
+=============================
+Or say, remove the "^M" character at the end of lines in vim, the original post is here: http://www.tech-recipes.com/rx/150/remove-m-characters-at-end-of-lines-in-vi/
+
+To remove the ^M characters at the end of all lines in vi, use:
+
+    :%s/^V^M//g
+
+The ^v is a CONTROL-V character and ^m is a CONTROL-M. When you type this, it will look like this:
+
+    :%s/^M//g
+
+In UNIX, you can escape a control character by preceeding it with a CONTROL-V. 
 
 Minus sign in path
 ==================
