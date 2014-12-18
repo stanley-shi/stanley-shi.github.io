@@ -1,3 +1,12 @@
+---
+layout: post
+title: Find Minimum in Rotated Sorted Array II 
+author: Stanley Shi
+comments: True
+tags: coding leetcode
+
+---
+
 ## Description
 
 Follow up for "Find Minimum in Rotated Sorted Array":
