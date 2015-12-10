@@ -29,6 +29,6 @@ done
 exit 0
 ~~~
 
-Note: 
-1. On some system, the "echo -n" may not correctly, if you see ugly "-n" in the prompt, just remove the "-n" in the script;
-2. You can modify it accordingly to provide a simple yarn application interactive shell.
+**Note:**
+* On some system, the "echo -n" may not correctly, if you see ugly "-n" in the prompt, just remove the "-n" in the script;
+* You can modify it accordingly to provide a simple yarn application interactive shell.
