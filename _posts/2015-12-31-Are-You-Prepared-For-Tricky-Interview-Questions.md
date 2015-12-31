@@ -8,7 +8,7 @@ tags: interview
 ---
 ### Info
 This was originally a post from the Facebook website, since I cannot access it within China, I just copy it here.
-The original post address: Are You Prepared For Tricky Behavioral Interview Questions
+The original post address: https://www.facebook.com/notes/egyptian-recruiter/are-you-prepared-for-tricky-behavioral-interview-questions/359902444038414/
 
 ## Are You Prepared For Tricky Behavioral Interview Questions Like These??
 * Why did you leave your last job?
@@ -72,13 +72,17 @@ The original post address: Are You Prepared For Tricky Behavioral Interview Ques
     3) get them to agree with you that such experience would be beneficial to the company.
 
 
-     "I try to take a systematic approach to problem solving. I take the time to gather the relevant information and clearly define the problem or goal. I think it is important to get the information and clarify the problem first before you start coming up with possible solutions, or wasting other people's time. FOR EXAMPLE, when I was at Job "X" ... What kinds of challenges are YOU currently facing in your department? How tough a position does that put you in? What could the ideal candidate do to help solve this problem in their first couple months on the job?"
 
-     "Sure, at my last job we had a problem where the situation was "X" ... the action I took was "Y" ... and the positive outcome was "Z" ... I was commended by Susan in Accounting for solving the problem and getting the project back on track. I think that's the type of experience you are looking to bring to your team ... isn't it?
+      "I try to take a systematic approach to problem solving. I take the time to gather the relevant information and clearly define the problem or goal. I think it is important to get the information and clarify the problem first before you start coming up with possible solutions, or wasting other people's time. FOR EXAMPLE, when I was at Job "X" ... What kinds of challenges are YOU currently facing in your department? How tough a position does that put you in? What could the ideal candidate do to help solve this problem in their first couple months on the job?"
 
-     "You would agree that having this type of experience will help me succeeed in this position, wouldn't you?"
 
-    "... How to best tell your 'experience stories' and then get them to agree with you that such experience would be huge asset for the company ..."
+      "Sure, at my last job we had a problem where the situation was "X" ... the action I took was "Y" ... and the positive outcome was "Z" ... I was commended by Susan in Accounting for solving the problem and getting the project back on track. I think that's the type of experience you are looking to bring to your team ... isn't it?
+
+
+      "You would agree that having this type of experience will help me succeeed in this position, wouldn't you?"
+
+
+      "... How to best tell your 'experience stories' and then get them to agree with you that such experience would be huge asset for the company ..."
 
 
 
@@ -87,8 +91,7 @@ The original post address: Are You Prepared For Tricky Behavioral Interview Ques
     **DISCUSSION:** This question reveals a lot about you. You want to indicate that what you liked best about your last job are things that will appeal to the Hiring Manager. Show that your last job allowed you to demonstrate many of the positive and desirable Behavioral Competencies that are discussed at the beginning of this Guide. Give specific examples of how your last job allowed you to flex your skills and show your maturity. Never make statements like "I like that my last company gave me a lot of vacation days," or something similar. When answering about what you liked least, keep it short and do not be negative.
 
 
-     "What I liked about my last job was the fact that there was good on the job training. I was able to really develop my "X" skills, which I know will help me succeed here if I am fortunate enough to be able to join your team. What are the qualities and skills of the people who have been most successful at this company?"
-
+      "What I liked about my last job was the fact that there was good on the job training. I was able to really develop my "X" skills, which I know will help me succeed here if I am fortunate enough to be able to join your team. What are the qualities and skills of the people who have been most successful at this company?"
 
      "I've got some of those skills as well. I think that's something that could benefit your department, isn't it?"
 
@@ -107,7 +110,7 @@ The original post address: Are You Prepared For Tricky Behavioral Interview Ques
 
 * What have you learned from your mistakes?
 
-**DISCUSSION:** Show that you are able to learn from your mistakes, but don't offer up any negative examples concerning your past performance. Show that you have been successful, but that you have the maturity it takes to examine your own behavior so that you can learn and grow and be a better employee. Be brief.
+   **DISCUSSION:** Show that you are able to learn from your mistakes, but don't offer up any negative examples concerning your past performance. Show that you have been successful, but that you have the maturity it takes to examine your own behavior so that you can learn and grow and be a better employee. Be brief.
 
 
      "Good question. Well, I have been successful at every job I have had, but I have had the normal ups and downs. I'd say that I do actively try to monitor my work habits and the quality of my workso that I can constantly be improving myself. FOR EXAMPLE, I have had one or two hiccups with customers where their satisfaction was not where I thought it was. I learned that I have to really monitor certain difficult customers closely and "take their temperature" so I can keep their satisfaction level as high as possible. Have YOU had any customers like that here?"
